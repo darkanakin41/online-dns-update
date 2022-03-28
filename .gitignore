@@ -1,0 +1,5 @@
+/.env
+
+/.bin
+/docker-compose.yml
+/pt.local.yaml

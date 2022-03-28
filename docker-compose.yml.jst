@@ -1,0 +1,25 @@
+if (JST === undefined) {
+  JST = {}
+}
+const workdir = '/app'
+
+const jstResult = {
+  services: {
+    node: {
+      buildImage: 'node',
+      applyUser: true,
+      binaries: {
+        'force-update': {
+          workdir: workdir,
+          command: 'node .',
+          exec: true
+        },
+      },
+      environment: {
+        API_TOKEN: "${API_TOKEN}",
+        AUTO_UPDATE_INTERVAL: 600
+      }
+    }
+  }
+}
+jstResult

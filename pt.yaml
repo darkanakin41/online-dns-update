@@ -1,0 +1,4 @@
+docker:
+  restart: 'unless-stopped'
+  build:
+    baseDirectory: '.'

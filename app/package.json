@@ -1,0 +1,22 @@
+{
+  "name": "darkanakin41-online-dns-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npm run lint && npx tsc",
+    "lint": "prettier --c ./src/**/*.ts",
+    "prettify": "prettier --write ./src/**/*.ts",
+    "update": "npx tsc && node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
